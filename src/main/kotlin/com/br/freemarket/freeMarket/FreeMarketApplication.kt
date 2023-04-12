@@ -8,5 +8,4 @@ class FreeMarketApplication
 
 fun main(args: Array<String>) {
 	runApplication<FreeMarketApplication>(*args)
-	println("Hello")
 }
