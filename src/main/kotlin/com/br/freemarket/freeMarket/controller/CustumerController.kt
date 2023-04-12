@@ -1,5 +1,6 @@
 package com.br.freemarket.freeMarket.controller
 
+import com.br.freemarket.freeMarket.model.CustomerModel
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
@@ -9,8 +10,8 @@ import org.springframework.web.bind.annotation.RestController
 class CustumerController {
 
     @GetMapping
-    fun helloWorld(): String {
-        return "Hello World do Controller com customer"
+    fun helloWorld(): CustomerModel {
+        return CustomerModel("1", "Felipe", "email@email.com")
     }
 
     @GetMapping("/2")
